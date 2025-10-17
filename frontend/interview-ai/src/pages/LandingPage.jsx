@@ -81,8 +81,8 @@ const LandingPage = () => {
         </div>
 
         <div className="w-full min-h-full bg-[#FFFCEF] mt-10 p-10">
-          <div classname="container mx-auto px-4 pt-10 pb-20">
-            <section classname="mt-5">
+          <div className="container mx-auto px-4 pt-10 pb-20">
+            <section className="mt-5">
               <h2 className="text-2xl font-medium text-center mb-12">
                 Features That Make You Shine
               </h2>
@@ -92,7 +92,7 @@ const LandingPage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
                   {APP_FEATURES.slice(0, 3).map((feature) => (
                     <div
-                      Key={feature.id}
+                      key={feature.id}
                       className="bg-[#FFFEF8] p-6 rounded-xl shadow-lg shadow-amber-100 transition border-amber-100">
                       <h3 className="text-base font-semibold mb-3">
                         {feature.title}
@@ -106,7 +106,7 @@ const LandingPage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   {APP_FEATURES.slice(3).map((feature) => (
                     <div
-                      Key={feature.id}
+                      key={feature.id}
                       className="bg-[#FFFEF8] p-6 rounded-xl shadow-xs hover:shadow-lg shadow-amber-100 transition border border-amber-100">
                       <h3 className="text-base font-semibold mb-3">
                         {feature.title}
